@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     background-color:rgb(250, 207, 17);
-    background-image: url('./fundo-amarelo40.webp');
+    background-image: url('./imgbgyellow.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -41,7 +41,7 @@ letter-spacing: 4px;
     transition: .5s ease-in-out;
 }
 a:hover{
-    background-color: white;
+    background-color: rgb(228, 238, 143);
 }
 
 .checkbox-container{
@@ -93,7 +93,7 @@ a:hover{
     height: 4px;
     width: 10px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px rgb(228, 238, 143);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -114,13 +114,17 @@ a:hover{
 .menu-items ul{
     list-style-type: none;
 }
+.menu-items li{
+    padding: 100px;
+}
 .menu-items ul li a{
     margin: 10px 0;
     color: #1e1e2a;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 20px;
     font-size: 40px;
+
 }
 #toggle:checked + .checkbox .trace:nth-child(1){
     transform: rotate(45deg);
@@ -137,11 +141,11 @@ a:hover{
     top: 48px;
 }
 #toggle:checked + .checkbox{
-    background-color: white;
+    background-color: rgb(228, 238, 143);
     
 }
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 100vmax white;
+    box-shadow: 0px 0px 0px 100vmax rgb(228, 238, 143);
     z-index: 1;
     
 }
